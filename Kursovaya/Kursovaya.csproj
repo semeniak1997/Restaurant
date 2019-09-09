@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BEB5E90C-0220-4C6E-B621-558C20BDA050}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Kursovaya</RootNamespace>
+    <AssemblyName>Kursovaya</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Final.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Final.Designer.cs">
+      <DependentUpon>Final.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NapitkiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NapitkiForm.Designer.cs">
+      <DependentUpon>NapitkiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CountEventArgs.cs" />
+    <Compile Include="Deserty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deserty.Designer.cs">
+      <DependentUpon>Deserty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eat.cs" />
+    <Compile Include="EatEventArgs.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Human.cs" />
+    <Compile Include="HumanEventArgs.cs" />
+    <Compile Include="PervoeBludoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PervoeBludoForm.Designer.cs">
+      <DependentUpon>PervoeBludoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SalatyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalatyForm.Designer.cs">
+      <DependentUpon>SalatyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Souce.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Souce.Designer.cs">
+      <DependentUpon>Souce.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VtoryeBludaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VtoryeBludaForm.Designer.cs">
+      <DependentUpon>VtoryeBludaForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Final.resx">
+      <DependentUpon>Final.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NapitkiForm.resx">
+      <DependentUpon>NapitkiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deserty.resx">
+      <DependentUpon>Deserty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PervoeBludoForm.resx">
+      <DependentUpon>PervoeBludoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SalatyForm.resx">
+      <DependentUpon>SalatyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Souce.resx">
+      <DependentUpon>Souce.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VtoryeBludaForm.resx">
+      <DependentUpon>VtoryeBludaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\2059e34856f56618796af849.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\5.-Spaghetti-and-Meatballs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\acdcd7acc9bcfa8206c442a80fedb107.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Соусы.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\recepti-desertov-s-foto.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\np3w2s4yyeg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\DSC_9234.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\1441740873_vkusnye-recepty-iz-kuricy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\25.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\s800.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\b6vjbm7ars.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\9359c3e9ca18c2acba746a238dc391cb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\blyuda-litovskoy-kuhni-4-2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\1531542e27eb66d6f23433b6286ea0c3_25095.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Kartoshka-po-derevenski-ot-Babushkinogo-Sada_full.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\8657.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\logo44.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\7454128-rttkey.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\goulash-058.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\stejk-iz-govyadiny.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\olive.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\grecheskysalat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\cezar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\nezhnost.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\mimoza.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\krevetki.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\sous-tartar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Teriyaki-Sauce-2_edited.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pesto.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\klukva.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\chili.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\gribnoi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6QSafR1tuh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\tiramisu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\cheescake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\panna-cota.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\tort-s-yagodami-i-jogurtom.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\sorbet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\persiki_s_likerom.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\alk_napitki.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bezalkogolnye-napitki.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\LuiRoderer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Caberne.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\JimBeam.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\jim-beam-white-5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Finland.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Carlsberg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\CapitanMorgan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Koktale.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\coca-cola-brendy-coca-cola-napitok-921327.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Kvas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\applejuce.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\tee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Kofe4-1024x683.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
